@@ -19,16 +19,34 @@
 
    @media only screen and (max-width: $bp-small) {
         padding: 5rem;       
-    }        
+    }      
+    
+   @media only screen and (max-width:$bp-small-phone) {
+        grid-template-columns: minmax(min-content, max-content);
+        grid-row-gap: 1.5rem;         
+   }
+
+   @media only screen and (max-width:$bp-small-phone) {
+        grid-row-gap: 4rem;
+        padding-right: 8rem;        
+    }
 
     &__logo {
         height: 3rem;
         justify-self: center;
+       
+        @media only screen and (max-width:$bp-small-phone) {
+            height: 2.5rem;      
+        }
     }
 
     &__btn {
         justify-self: start;
         align-self: start;
+
+        @media only screen and (max-width:$bp-small-phone) {
+            font-size: 1rem;      
+        }
     }
 
     &__seenon-text {
@@ -39,6 +57,10 @@
 
         font-size: 1.6rem;
         color: $color-grey-light-2;
+
+        @media only screen and (max-width:$bp-small-phone) {
+            margin-bottom: -3rem;              
+        }
 
         &::before
         ,&::after {

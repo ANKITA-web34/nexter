@@ -38,6 +38,9 @@ body {
   font-size: 4.5rem;
   color: #f9f7f6;
   line-height: 1; }
+  @media only screen and (max-width: 17.5em) {
+    .heading-1 {
+      font-size: 3.5rem; } }
 
 .heading-2 {
   font-size: 4rem;
@@ -52,6 +55,12 @@ body {
   font-size: 1.6rem;
   color: #c69963;
   text-transform: uppercase; }
+  @media only screen and (max-width: 17.5em) {
+    .heading-3 {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 17.5em) {
+    .heading-3 {
+      margin-left: 3rem; } }
 
 .heading-4 {
   font-size: 1.9rem; }
@@ -124,6 +133,13 @@ body {
         transform: translateY(-1.2rem); }
       .nav-btn::after {
         transform: translateY(1rem); } }
+  @media only screen and (max-width: 17.5em) {
+    .nav-btn {
+      margin-right: 5rem; }
+      .nav-btn::before {
+        transform: translateY(-1rem); }
+      .nav-btn::after {
+        transform: translateY(0.8rem); } }
 
 .header {
   background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url(../img/hero.jpeg);
@@ -143,12 +159,26 @@ body {
   @media only screen and (max-width: 37.5em) {
     .header {
       padding: 5rem; } }
+  @media only screen and (max-width: 17.5em) {
+    .header {
+      grid-template-columns: minmax(min-content, max-content);
+      grid-row-gap: 1.5rem; } }
+  @media only screen and (max-width: 17.5em) {
+    .header {
+      grid-row-gap: 4rem;
+      padding-right: 8rem; } }
   .header__logo {
     height: 3rem;
     justify-self: center; }
+    @media only screen and (max-width: 17.5em) {
+      .header__logo {
+        height: 2.5rem; } }
   .header__btn {
     justify-self: start;
     align-self: start; }
+    @media only screen and (max-width: 17.5em) {
+      .header__btn {
+        font-size: 1rem; } }
   .header__seenon-text {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
@@ -156,6 +186,9 @@ body {
     align-items: center;
     font-size: 1.6rem;
     color: #aaa; }
+    @media only screen and (max-width: 17.5em) {
+      .header__seenon-text {
+        margin-bottom: -3rem; } }
     .header__seenon-text::before, .header__seenon-text::after {
       content: "";
       height: 1px;
@@ -184,6 +217,9 @@ body {
   @media only screen and (max-width: 50em) {
     .realtours {
       grid-column: 1 / -1; } }
+  @media only screen and (max-width: 17.5em) {
+    .realtours {
+      padding-right: 8rem; } }
   .realtours__list {
     display: grid;
     grid-template-columns: min-content max-content;

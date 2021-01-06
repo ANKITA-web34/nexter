@@ -10,7 +10,11 @@
     grid-row-gap: 2rem;
 
     @media only screen and (max-width: $bp-medium) {
-        grid-column: 1 / -1;
+        grid-column: 1 / -1;  
+    }
+
+    @media only screen and (max-width:$bp-small-phone) {
+        padding-right: 8rem;
     }
 
     &__list {

@@ -41,7 +41,12 @@
 
         &::before { transform: translateY(-1.2rem); }
         &::after { transform: translateY(1rem); }
+    }
 
+    @media only screen and (max-width:$bp-small-phone) {
+        margin-right: 5rem;
+        &::before { transform: translateY(-1rem); }
+        &::after { transform: translateY(.8rem); }    
     }
 
     
